@@ -3,6 +3,7 @@
 @import "/src/styles/mixins/fonts.scss";
 @import "/src/styles/mixins/responsive.scss";
 
+
 .container {
   @include Padding;
   padding-bottom: 255px;
@@ -11,6 +12,7 @@
   align-items: center;
   justify-content: center;
 
+
   h1 {
     @include SizeLarge;
     font-weight: bold;
@@ -18,8 +20,10 @@
 
   p {
     @include SizeNormal;
-    opacity: 0.7;
-    margin-bottom: 8rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+   
+    
   }
 
   h1,
@@ -29,10 +33,11 @@
   }
 
   @include Phone {
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
+    
 
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
 
     h1,
@@ -43,6 +48,7 @@
 
   @include Tablet {
     padding-bottom: 6rem;
+
 
     p {
       margin-bottom: 2rem;
@@ -59,6 +65,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 68px;
+  
 
   @include Phone {
     grid-template-columns: 1fr;
@@ -68,31 +75,60 @@
 
 .feature {
   max-width: 509px;
-  max-height: 347px;
-  width: 100%;
-  height: 100%;
-  padding: 32px 35px;
-  background-color: $white-color;
+  background: rgba(17, 19, 23, 0.94);
+ 
+
+
   border-radius: 5px;
+  text-align: center;
+
+  .icon {
+    width: 100%;
+    
+    
+  }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+    
+    }
 
   h1 {
     @include SizeMedium;
     font-weight: bold;
-    color: $purple2-color;
+    color: $white-color;
     width: auto;
     text-align: left;
   }
 
   p {
-    @include SizeSmall;
-    color: $gray2-color;
+    font-size: 16px;
+    color: $white-color;
     width: auto;
+    height: auto;
     text-align: left;
+    opacity: 0.7;
+
+  }
+
+  h1, p {
+    padding: 0 15px;
   }
 
   @include Phone {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+    span {
+      font-size: 17px;
+      font-weight: 800;
+      color: $red-color;
+
+
+    }
   }
+
+
+
 }
+
+
+

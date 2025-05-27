@@ -3,38 +3,60 @@
 @import "/src/styles/mixins/responsive.scss";
 
 .container {
-  @include Padding; //Mixin
-  color: $white-color; //Variable
+  @include Padding;
+  color: $white-color;
   padding-top: 34px;
   padding-bottom: 34px;
   width: 100%;
   background-color: $purple-color;
   border-bottom: 0.5px solid $gray-color;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   align-items: center;
   justify-content: space-between;
+  // position: fixed;
+  background: $cinza-claro;
+
+
+  
+
+
+
 
   @include Phone {
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+
   }
 
   @include Tablet {
     grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  @include Laptop {
+    grid-template-columns: repeat(3, auto);
+
   }
 }
 
 .menu {
+
   font-size: 22px;
 
-  a + a {
+
+  a+a {
     margin-left: 38.9px;
+
   }
 
   @include Phone {
     display: none;
+
   }
+
+
 }
 
 .action {
@@ -47,4 +69,6 @@
   @include Tablet {
     display: none;
   }
+
+
 }

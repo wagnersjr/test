@@ -6,7 +6,6 @@ import * as Yup from "yup";
 import Styles from "./contato.module.scss";
 import Button from "../button/index";
 import Input from "../input";
-import Select from "../select";
 import { Loading } from "../loading/index";
 import { SuccessModal } from "../successModal";
 import { FailModal } from "../failModal/index";
@@ -21,8 +20,7 @@ const Contato = () => {
       name: "",
       email: "",
       phone: "",
-      website: "",
-      midia: "",
+      mensagem: "",
     },
     validationSchema: Yup.object({
       name: Yup.string().required("Campo Obrigatório"),
@@ -32,21 +30,18 @@ const Contato = () => {
       phone: Yup.string()
         .matches("", "Digite um telefone válido")
         .required("Campo Obrigatório"),
-      website: Yup.string().required("Campo Obrigatório"),
-      midia: Yup.string().required("Campo Obrigatório"),
+      mensagem: Yup.string().required("Campo Obrigatório"),
     }),
     validateOnChange: false,
     validateOnBlur: false,
     onSubmit: (values) => handleSubmitForm(values),
   });
 
-  /*   formik?.errors -> Pode ser utilizado para dar feedback no campo e para o usuario*/
-
   const handleSubmitForm = (values) => {
     setLoading(true);
     axios
       .post("/api/sendEmail", {
-        messageBody: `Nome: ${values.name}, Email: ${values.email}, Telefone: ${values.phone}, Site: ${values.website}, Midia: ${values.midia}`,
+        messageBody: `Nome: ${values.name}, Email: ${values.email}, Telefone: ${values.phone}, Mensagem: ${values.mensagem}`,
       })
       .then(() => {
         formik.resetForm();
@@ -72,10 +67,11 @@ const Contato = () => {
       <div className={Styles.container} id="contato">
         <div className={Styles.texts}>
           <span>ENTRE EM CONTATO</span>
-          <h1>Aumente seu resultado de vendas e performance</h1>
+          <h1>Estamos prontos para tirar seu projeto do papel!</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna
+            Fale com a gente! Tem um projeto em mente ou precisa de ajuda para
+            transformar seu espaço? Nossa equipe está pronta para atender você
+            com atenção e agilidade.
           </p>
         </div>
         <div className={Styles.form}>
@@ -86,7 +82,7 @@ const Contato = () => {
               id="name"
               name="name"
               type="text"
-              placeholder="Nome completo"
+              placeholder="Digite seu Nome"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
               value={formik.values.name}
@@ -96,7 +92,7 @@ const Contato = () => {
               id="email"
               name="email"
               type="email"
-              placeholder="E-mail profissional"
+              placeholder="Digite seu email"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
               value={formik.values.email}
@@ -114,32 +110,20 @@ const Contato = () => {
               required
             />
             <Input
-              id="website"
-              name="website"
+              id="mensagem"
+              name="mensagem"
               type="text"
-              placeholder="Site"
+              placeholder="Digite sua mensagem"
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
-              value={formik.values.website}
-              required
-            />
-            <Select
-              id="midia"
-              name="midia"
-              placeholder="Orçamento para mídia"
-              options={[
-                { label: "Instagram", value: "instagram" },
-                { label: "Facebook", value: "facebook" },
-              ]}
-              onChange={formik.handleChange}
-              value={formik.values.midia}
+              value={formik.values.mensagem}
               required
             />
 
             <Button type="submit" title="Enviar" kind="full" />
           </form>
         </div>
-        <div className={Styles.footer}>
+        {/* <div className={Styles.footer}>
           <p>
             Ao enviar esse formulário, você reconhece que leu e concorda com a
             nossa
@@ -147,7 +131,7 @@ const Contato = () => {
               <span> Política de Privacidade.</span>
             </Link>
           </p>
-        </div>
+        </div> */}
       </div>
     </>
   );

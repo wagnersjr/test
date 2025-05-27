@@ -1,12 +1,15 @@
 @import "./responsive.scss";
 
 @mixin Padding {
-  padding-left: 11.25rem; //1rem = 16px
-  padding-right: 11.25rem; //1rem = 16px
+  padding-left: 11.25rem;
+  padding-right: 11.25rem;
+
 
   @include Phone {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+
   }
 
   @include Tablet {
@@ -17,5 +20,6 @@
   @include Laptop {
     padding-left: 3rem;
     padding-right: 3rem;
+
   }
 }

@@ -1,27 +1,25 @@
 import Styles from "./welcome.module.scss";
-import Button from "../button/index";
-import BannerWelcome from "/public/images/bannerWelcome.svg";
-import Image from "next/image";
-import { ScrollTo } from "../../utils/scrollTo";
+
 
 const Welcome = () => {
   return (
     <div className={Styles.container}>
+      <div className={Styles.shadow}></div>
       <div className={Styles.text}>
-        <h1>Melhor agência de marketing do bairro</h1>
+        <h1>ART LAF</h1>
+        <h2>REFORMAS E DECORAÇÃO</h2>
+
         <p>
-          Somos uma agência de performance digital, aceleramos vendas e
-          aquisição de leads para grandes marcas.
+          Na <span>ARTLAF</span>, unimos criatividade, experiência e compromisso
+          para oferecer serviços de reformas e decoração personalizados. Do
+          projeto à execução, cuidamos de cada detalhe para que seu ambiente
+          reflita estilo, conforto e funcionalidade.
         </p>
-        <Button
-          title="Aumentar vendas"
-          kind="secundary"
-          onClick={() => ScrollTo("contato")}
-        />
+       
       </div>
-      <div className={Styles.image}>
+      {/* <div className={Styles.image}>
         <Image src={BannerWelcome} alt="Banner Welcome" />
-      </div>
+      </div> */}
     </div>
   );
 };

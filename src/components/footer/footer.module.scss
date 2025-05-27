@@ -6,14 +6,17 @@
 .container {
   @include Padding;
   padding-top: 72px;
-  background-color: $purple3-color;
+  background-color: $cinza-claro;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, auto);
+  border-radius: 20px;
+
 
   @include Phone {
     grid-template-columns: 1fr;
     padding-top: 1rem;
     gap: 1rem;
+
   }
 }
 
@@ -31,7 +34,7 @@
 
   h1 {
     @include SizeSmall;
-    color: $green2-color;
+    color: $red-color;
   }
 
   p {
@@ -42,13 +45,7 @@
     text-align: right;
   }
 
-  .icons {
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-  }
+ 
 
   @include Phone {
     margin-top: 0px;
@@ -65,6 +62,9 @@
   color: $gray-color;
   grid-column: span 4;
   text-align: center;
+ p{
+  color: $white-color;
+ }
 
   @include Phone {
     grid-column: 1;
