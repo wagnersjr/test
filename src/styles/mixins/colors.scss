@@ -8,5 +8,20 @@ $gray-color3: #000000;
 $gray-color4: #f7f7f7;
 $gray5-color: #000000;
 $footer-color: #26003b;
-$red-color:#ec4046;
+$red-color:#ff5156;
 $cinza-claro: #111317;
+
+
+
+@mixin cor-opaca{
+color: rgba($color: #ffff, $alpha: 0.9);
+
+}
+
+@mixin cor-span{
+
+color: $red-color;
+opacity: 1;
+font-weight: 900;
+font-style: italic;
+}

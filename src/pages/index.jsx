@@ -3,6 +3,8 @@ import Features from "../components/features";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Welcome from "../components/welcome";
+import WhatsAppButton from "../components/WhatsAppButton/WhatsAppButton";
+
 import styles from "./Home.module.scss";
 
 export default function Home() {
@@ -13,6 +15,10 @@ export default function Home() {
       <Features />
       <Contato />
       <Footer />
+      <WhatsAppButton 
+        phoneNumber="5521973177135" 
+        message="Olá, gostaria de mais informações!" 
+      />
     </div>
   );
 }

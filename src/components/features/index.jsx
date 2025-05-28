@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Styles from "./features.module.scss";
 import Icon from "/public/images/icon.svg";
-import Toldo from "/public/images/toldo.svg";
-import Rebaixamento from "/public/images/rebaixamento.svg";
-import Porcelanato from "/public/images/porcelanato.svg";
-import Grafiato from "/public/images/grafiato.svg";
+import Toldo from "/public/images/toldo.jpg";
+import Rebaixamento from "/public/images/rebaixamento.jpg";
+import Porcelanato from "/public/images/porcelanato.jpg";
+import Grafiato from "/public/images/grafiato.jpg";
 
 const Features = () => {
   return (
@@ -21,9 +21,9 @@ const Features = () => {
       <div className={Styles.features}>
         <div className={Styles.feature}>
           <div className={Styles.icon}>
-          <Image src={Toldo} alt="toldo" className={Styles.photo}/>
+          <Image src={Toldo} alt="foto-toldo" className={Styles.photo}/>
           </div>
-          <h1>Instalação de Toldos e Coberturas</h1>
+          <h2>Instalação de Toldos e Coberturas</h2>
           <p>
             Trabalho especializado na instalação, manutenção e reparo de toldos
             e coberturas, com opções elétricas e hidráulicas. Atendo projetos
@@ -45,15 +45,15 @@ const Features = () => {
         </div>
         <div className={Styles.feature}>
          <div className={Styles.icon}>
-          <Image src={Rebaixamento} alt="rebaixamento" className={Styles.photo}/>
+          <Image src={Rebaixamento} alt="foto-rebaixamento" className={Styles.photo}/>
           </div>
-          <h1>Instalação de Rebaixamento em Gesso, PVC, Drywall e Isopor</h1>
+          <h2>Instalação de Rebaixamento em Gesso, PVC, Drywall e Isopor</h2>
           <p>
             Somos profissionais especializados na instalação de rebaixamento de
             teto, trabalhando com gesso, PVC, drywall e isopor. Realizo serviços
             com acabamento de qualidade, alinhados com o que há de mais moderno
-            em estética e funcionalidade para interiores.{" "}
-          </p>{" "}
+            em estética e funcionalidade para interiores.
+          </p>
           <p>
             Atendo projetos residenciais, comerciais e corporativos, sempre com
             atenção aos detalhes, prazos e às necessidades de cada cliente. Seja
@@ -64,9 +64,9 @@ const Features = () => {
         </div>
         <div className={Styles.feature}>
          <div className={Styles.icon}>
-          <Image src={Grafiato} alt="Grafiato" className={Styles.photo}/>
+          <Image src={Grafiato} alt="foto-pintura" className={Styles.photo}/>
           </div>
-          <h1>Pintura</h1>
+          <h2>Pintura e Decoração</h2>
           <p>
             Na <span>ARTLAF</span>, somos especialistas em pinturas com grafiato
             e textura, oferecendo soluções personalizadas que unem beleza,
@@ -97,9 +97,9 @@ const Features = () => {
         </div>
         <div className={Styles.feature}>
           <div className={Styles.icon}>
-          <Image src={Porcelanato} alt="toldo" className={Styles.photo}/>
+          <Image src={Porcelanato} alt="foto-porcelanato" className={Styles.photo}/>
           </div>
-          <h1>Colocações de Pisos e Porcelanatos</h1>
+          <h2>Colocações de Pisos e Porcelanatos</h2>
           <p>
             Na <span>ARTLAF</span>, somos especialistas em instalação de pisos,
             porcelanatos e revestimentos em geral, oferecendo soluções completas
@@ -108,8 +108,8 @@ const Features = () => {
             cliente, entregando ambientes com acabamento sofisticado,
             alinhamento preciso e durabilidade garantida. Cada projeto é
             executado por profissionais qualificados, utilizando as melhores
-            técnicas e ferramentas do mercado.{" "}
-          </p>{" "}
+            técnicas e ferramentas do mercado.
+          </p>
           <p>
             Nossos serviços incluem: Instalação de porcelanatos, cerâmicas,
             pisos vinílicos e outros tipos de revestimento Preparação e
