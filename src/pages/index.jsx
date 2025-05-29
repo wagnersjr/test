@@ -17,8 +17,13 @@ export default function Home() {
       <Features />
       <Contato />
       <Footer />
-      <ButtonWpp/>
+      <ButtonWpp
+        phoneNumber="5521973177135" 
+        message="Olá, gostaria de mais informações!" 
+      />
       
     </div>
   );
 }
+
+
