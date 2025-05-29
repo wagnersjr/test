@@ -1,9 +1,10 @@
+import ButtonWpp from "../components/buttonwpp";
 import Contato from "../components/contato";
 import Features from "../components/features";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Welcome from "../components/welcome";
-import WhatsAppButton from "../components/whatsAppButton";
+
 
 
 import styles from "./Home.module.scss";
@@ -16,10 +17,8 @@ export default function Home() {
       <Features />
       <Contato />
       <Footer />
-      <WhatsAppButton 
-        phoneNumber="5521973177135" 
-        message="Olá, gostaria de mais informações!" 
-      />
+      <ButtonWpp/>
+      
     </div>
   );
 }
