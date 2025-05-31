@@ -105,6 +105,9 @@
 
     @include Phone {
       text-align: left;
+        
+       
+      
     }
   }
 
@@ -117,12 +120,7 @@
     line-height: 1.6;
 
 
-     span {
-      @include cor-span;
-      font-size: 17px;
     
-
-    }
   }
 
 
@@ -133,6 +131,17 @@
   }
 
 
+ span {
+      @include cor-span;
+      font-size: 17px;
+      
+    
 
+    }
+
+    // .spantitulo{
+      
+
+    // }
 
 }

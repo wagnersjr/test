@@ -5,23 +5,23 @@ import Toldo from "/public/images/toldo.jpg";
 import Rebaixamento from "/public/images/rebaixamento.jpg";
 import Porcelanato from "/public/images/porcelanato.jpg";
 import Grafiato from "/public/images/grafiato.jpg";
+import Cobertura from "/public/images/cobertura.jpg";
 
 const Features = () => {
   return (
     <div className={Styles.container}>
       <h1>Quem Somos:</h1>
       <p>
-        Somos uma empresa especializada em reformas e decoração,
-        com foco na excelência, no bom gosto e no compromisso com a satisfação
-        de nossos clientes. Atuamos com uma equipe experiente e dedicada, pronta
-        para transformar qualquer ambiente em um espaço único, funcional e
-        acolhedor.
+        Somos uma empresa especializada em reformas e decoração, com foco na
+        excelência, no bom gosto e no compromisso com a satisfação de nossos
+        clientes. Atuamos com uma equipe experiente e dedicada, pronta para
+        transformar qualquer ambiente em um espaço único, funcional e acolhedor.
       </p>
 
       <div className={Styles.features}>
         <div className={Styles.feature}>
           <div className={Styles.icon}>
-          <Image src={Toldo} alt="foto-toldo" className={Styles.photo}/>
+            <Image src={Toldo} alt="foto-toldo" className={Styles.photo} />
           </div>
           <h2>Instalação de Toldos e Coberturas</h2>
           <p>
@@ -32,7 +32,6 @@ const Features = () => {
           </p>
 
           <p>
-           
             O que você pode esperar do meu serviço: Qualidade e Durabilidade:
             Utilizo materiais de alta resistência, garantindo um serviço durável
             e seguro, ideal para diferentes condições climáticas. Design Sob
@@ -44,8 +43,12 @@ const Features = () => {
           </p>
         </div>
         <div className={Styles.feature}>
-         <div className={Styles.icon}>
-          <Image src={Rebaixamento} alt="foto-rebaixamento" className={Styles.photo}/>
+          <div className={Styles.icon}>
+            <Image
+              src={Rebaixamento}
+              alt="foto-rebaixamento"
+              className={Styles.photo}
+            />
           </div>
           <h2>Instalação de Rebaixamento em Gesso, PVC, Drywall e Isopor</h2>
           <p>
@@ -63,8 +66,8 @@ const Features = () => {
           </p>
         </div>
         <div className={Styles.feature}>
-         <div className={Styles.icon}>
-          <Image src={Grafiato} alt="foto-pintura" className={Styles.photo}/>
+          <div className={Styles.icon}>
+            <Image src={Grafiato} alt="foto-pintura" className={Styles.photo} />
           </div>
           <h2>Pintura e Decoração</h2>
           <p>
@@ -97,7 +100,11 @@ const Features = () => {
         </div>
         <div className={Styles.feature}>
           <div className={Styles.icon}>
-          <Image src={Porcelanato} alt="foto-porcelanato" className={Styles.photo}/>
+            <Image
+              src={Porcelanato}
+              alt="foto-porcelanato"
+              className={Styles.photo}
+            />
           </div>
           <h2>Colocações de Pisos e Porcelanatos</h2>
           <p>
@@ -121,6 +128,41 @@ const Features = () => {
             resultado que supere as expectativas. Entre em contato conosco e
             solicite um orçamento. Vamos transformar o seu espaço com qualidade
             e profissionalismo.
+          </p>
+        </div>
+
+        <div className={Styles.feature}>
+          <div className={Styles.icon}>
+            <Image
+              src={Cobertura}
+              alt="foto-cobertura"
+              className={Styles.photo}
+            />
+          </div>
+          <h2>Especialista em Coberturas Metálicas e Estruturas de Alta Qualidade</h2>
+          <p>
+            Trabalhamos com a instalação de coberturas metálicas e estruturas de
+            aço para os mais variados tipos de construções, como galpões,
+            garagens, mezaninos, supermercados, escolas, centros logísticos,
+            entre outros. As estruturas metálicas oferecem diversas vantagens em
+            comparação aos métodos tradicionais, como rapidez na execução,
+            redução de custos com mão de obra e materiais, alta durabilidade,
+            resistência e excelente acabamento. Também realizamos a montagem de
+            telhas simples, termoacústicas e modelos com aparência de cerâmica,
+            sempre priorizando qualidade, estética e funcionalidade.
+            
+          </p>
+          <span className={Styles.spantitulo}>Soluções Eficientes, Modernas e Sustentáveis</span>
+          <p>
+            A estrutura metálica é uma alternativa moderna e sustentável para
+            quem busca otimizar prazos e garantir maior precisão na construção.
+            Trabalhamos com materiais certificados e recicláveis, como aço
+            galvanizado e galvalume, além de processos industrializados que
+            reduzem ruídos e desperdícios na obra. Oferecemos suporte completo,
+            desde a escolha do melhor tipo de cobertura até a instalação final,
+            sempre com equipe especializada. Entre em contato e solicite um
+            orçamento – seu projeto merece uma estrutura segura, ágil e de alto
+            padrão!
           </p>
         </div>
       </div>
