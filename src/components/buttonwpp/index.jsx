@@ -5,11 +5,12 @@ const ButtonWpp = ({ phoneNumber = '', message = 'Olá!' }) => {
 
   return (
     <a
-      href={url}
+     href={url}
       className={Styles.buttonwpp}
       target="_blank"
-      title="Fale conosco através do WhatsApp"
-      id="link-whatsapp-floating"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco pelo WhatsApp"
+
     >
       <svg
         className={Styles.icon}
