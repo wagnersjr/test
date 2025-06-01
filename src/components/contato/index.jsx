@@ -66,7 +66,7 @@ const Contato = () => {
       {isloading && <Loading />}
       <div className={Styles.container} id="contato">
         <div className={Styles.texts}>
-          <span>ENTRE EM CONTATO</span>
+          <span>FAÇA UM ORÇAMENTO SEM COMPROMISSO</span>
           <h1>Estamos prontos para tirar seu projeto do papel!</h1>
           <p>
             Fale com a gente! Tem um projeto em mente ou precisa de ajuda para

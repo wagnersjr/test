@@ -18,7 +18,7 @@ export default function Home() {
       <Contato />
       <Footer />
       <ButtonWpp
-        phoneNumber="5521973177135" 
+        phoneNumber="5521979663432" 
         message="Olá, gostaria de mais informações!" 
       />
       
