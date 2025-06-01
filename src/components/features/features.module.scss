@@ -135,13 +135,15 @@
       @include cor-span;
       font-size: 17px;
       
+      
     
 
     }
 
-    // .spantitulo{
-      
+   
 
-    // }
-
+}
+.spantitulo{
+  display: none;
+  text-align: left;
 }

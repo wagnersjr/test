@@ -21,7 +21,13 @@ const Header = () => {
   return (
     <div className={`${Styles.container} ${scrolled ? Styles.scrolled : ""}`}>
       <div className={Styles.logotipo}>
-        <Image src={Logo} alt="Logo" />
+       <Image
+          src={Logo}
+          alt="Logo"
+          width={120}
+          height={40}
+          style={{ height: "auto", width: "auto"}}
+        />
       </div>
       <nav className={Styles.menu}>{/* <Link href="/">Home</Link> */}</nav>
       <div className={Styles.action}>

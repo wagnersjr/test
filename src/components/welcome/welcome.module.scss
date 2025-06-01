@@ -5,22 +5,23 @@
 
 
 .container {
-  
+
   @include Padding;
   height: 100vh;
-  padding-top: 219px;
+  padding-top: 190px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-image: url("/images/bannerWelcome.svg"); 
+  background-image: url("/images/banner-1.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover; //rever
   position: relative;
-  
-  
-  .shadow{
+
+
+  .shadow {
     width: 80%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.915), rgba(0, 0, 0, 0.744), transparent);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900), rgba(0, 0, 0, 0.600), transparent);
     position: absolute;
     z-index: 1;
   }
@@ -37,19 +38,19 @@
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: max-content;
-    padding-top: 1rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    
+
 
   }
 
   @include Tablet {
     height: 100%;
     margin-bottom: 4rem;
-    padding-top: 4rem;
-    
+    padding-top: 6rem;
+
   }
 
   @include Laptop {
@@ -61,13 +62,15 @@
 .text {
   text-shadow: 4px 1px 7px black;
   z-index: 2;
-  
- 
+
+
   h1 {
     @include SizeExtra;
     font-weight: bold;
     color: $red-color;
-   
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    // font-family: 'Arial Black', sans-serif;
+
 
   }
 

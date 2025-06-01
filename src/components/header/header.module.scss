@@ -5,22 +5,22 @@
 .container {
   @include Padding;
   color: $white-color;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
-  background-color: $purple-color;
+  background-color: transparent;
   border-bottom: 0.5px solid $gray-color;
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
   justify-content: space-between;
-  // background: $cinza-claro;
-  // position: fixed;
-  // z-index: 1000;
+  position: fixed;
+  z-index: 999;
   backdrop-filter: blur(10px);           
   -webkit-backdrop-filter: blur(10px);
-
   
+ 
+
 
 
   @include Phone {
@@ -40,6 +40,8 @@
 
   }
 }
+
+
 
 .menu {
 
@@ -74,6 +76,7 @@
 }
 
 .scrolled {
-  background-color: rgba(0, 0, 0, 0.85); 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  background-color: transparent; 
+   
 }
+
